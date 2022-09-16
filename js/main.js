@@ -1,6 +1,16 @@
+var win = window, nav = win.navigator, doc = document, docEle = doc.documentElement;
+var ua = nav.userAgent.toLowerCase();
+var isMobile = /mobile|android|iphone|ipad/.test(ua);
+
 function onload()
 {
     let mainMenu = document.getElementById('main-menu');
+    if (isMobile) 
+    {
+        mainMenu.style.display = 'none';
+        return;
+    }
+    
     var items = mainMenu.getElementsByTagName('a');
     for (let i = 0; i < items.length; i++) 
     {
@@ -23,6 +33,7 @@ function onload()
             }
         }
     }
+
     updateSize();
     
     window.addEventListener('resize', (event) => {
@@ -34,7 +45,7 @@ function updateSize()
 {
     let mainMenu = document.getElementById('main-menu');
     let cv = document.getElementById('cv-container');
-    let w = mainMenu.clientWidth != undefined ? mainMenu.clientWidth : 250;
+    let w = mainMenu.clientWidth || 250;
     cv.style.marginLeft = w + 'px';
 }
 
