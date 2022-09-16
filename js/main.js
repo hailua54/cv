@@ -23,7 +23,16 @@ function onload()
             }
         }
     }
+    updateSize();
+    
+    window.addEventListener('resize', (event) => {
+        updateSize();
+    });
+}
 
+function updateSize()
+{
+    let mainMenu = document.getElementById('main-menu');
     let cv = document.getElementById('cv-container');
     let w = mainMenu.clientWidth != undefined ? mainMenu.clientWidth : 250;
     cv.style.marginLeft = w + 'px';
