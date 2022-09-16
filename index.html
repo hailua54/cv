@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/main.css">
+<script src="js/main.js">
+</script>
+</head>
+<body onload="onload()">
+
+<div id="main-menu">
+    <div id="name">Vũ Anh CV</div>
+    <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#working_history">Working History</a></li>
+        <li><a href="#projects">Projects And Demos</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#all">All</a></li>
+    </ul>
+</div>
+
+<div id="cv-container">
+    <div class="cv-content" id="contact">
+        <h2>Contact</h2>
+        <p><strong>Full Name:</strong> NGUYEN NGOC VU ANH</p>
+        <p><strong>Sex:</strong> Male</p>
+        <p><strong>Date of birth:</strong> JUNE - 30 - 1982</p>
+        <p><strong>Place of birth:</strong> Ben Luc, Long An</p>
+        <p><strong>Background:</strong>Computer Engineer, University of Technology, Ho Chi Minh City.</p>
+        <p><strong>Address:</strong> Eco Green Sai Gon, Nguyen Van Linh street, District 7, hcm city</p>
+        <p><strong>Phone:</strong> 033 357 5569</p>
+        <p><strong>Email:</strong> <a href="mailto:hailua54@gmail.com">hailua54@gmail.com</a></p>
+    </div>
+
+    <div class="cv-content" id="skills">
+        <h2>Skills</h2>
+        <p><strong>Programming languages and platforms</strong></p>
+        <ul class="a">
+            <li>Js, TypeScript</li>
+            <li>C, C++</li>
+            <li>Python</li>
+            <li>IOS - Objective C, Swift</li>
+            <li>Android - Java</li>
+            <li>HTML5 - js/html/css</li>
+        </ul>
+
+        <p><strong>Game frameworks</strong></p>
+        <ul class="a">
+            <li>Cocos creator, Cocos2d-x</li>
+            <li>PixiJS</li>
+            <li>OpenGL/WebGL</li>
+            <li>OpenCV</li>
+            <li>Box2D</li>
+            <li>Spine Animation</li>
+            <li>WebRTC - live casino</li>
+            <li>Unity3D</li>
+            <li>3D game frameworks</li>
+        </ul>
+
+        <p><strong>Servers</strong></p>
+        <ul class="a">
+            <li>Nodejs</li>
+            <li>Wowza Media Server - WebRTC streaming</li>
+            <li>Socket/WebSocket - Real time multiplayer game</li>
+            <li>MySQL</li>
+        </ul>
+    </div>
+
+    <div class="cv-content" id="working_history">
+        <h2>Working History</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Work Description</th>
+                <th>Duration</th>
+            </tr>
+            <tr>
+                <td>Currently</td>
+                <td>Gemi - Viet Nam</td>
+                <td>R&D expert and project owner</td>
+                <td>
+                    <ul class="a">
+                        <li>2D and 3D game, native and html5 platforms</li>
+                        <li>Optimize cocos game performance, rendering, download size</li>
+                        <li>Secure spine animation assets form stealing in html5 cocos game</li>
+                        <li>Write tools for 3D games that need full custom bezier 3D path with unlimited control points and fixed moving speed</li>
+                        <li>Build POC(Proof Of Concept) and demo for 3D virtual sport games.</li>
+                        <li>Support team for cocos framework or project's tecnical issues</li>
+                        <li>Horse racing project owner</li>
+                        <li>Build server for virtual sport match and payout generating.</li>
+                        <li>Build server for Battle Ship dynamic game map generating with DPS user.</li>
+                        <li>Build realtime audio communication with Wowza Media Server and webRTC</li>
+                    </ul>
+                </td>
+                <td>4 Years</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Spiral Works - W88 - Philippines</td>
+                <td>HTML5 game leader</td>
+                <td>
+                    <ul class="a">
+                        <li>Live streaming casino game with web RTC support: Baccarat, Blackjack, Roullette...</li>
+                        <li>Slots</li>
+                        <li>Keno</li>
+                    </ul>
+                </td>
+                <td>4 Years</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>SSG - Viet Nam</td>
+                <td>Cocos2d-x expert</td>
+                <td>
+                    <ul class="a">
+                        <li>Develop and optimize battle core game engine for client and server</li>
+                        <li>Develop Tan Vo Lam mobile game - published by VinaGame</li>
+                    </ul>
+                </td>
+                <td>1.5 Years</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>VinaGame - Viet Nam</td>
+                <td>Cocos2d-x expert, Flash Action Script team leader</td>
+                <td>
+                    <ul class="a">
+                        <li>Develop multiplayer game: Aniworld</li>
+                    </ul>
+                </td>
+                <td>1 Years</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="cv-content" id="projects">
+        <h2>Projects And Demos</h2>
+        <h3>Company projects</h3>
+        <p><strong>Horse Racing</strong></p>
+        <ul class="a">
+            <li>Description: 3D virtual sport game with dynamic payouts.</li>
+            <li>Programming Languages: TypeScript, Js</li>
+            <li>Frameworks: cocos creator, Nodejs</li>
+            <li>Demo: private</li>
+            
+            <li><a href="https://youtu.be/hzr48XZQ5dI" target="_blank">demo video</a></li>
+        </ul>
+
+        <p><strong>Fish3D tool</strong></p>
+        <ul class="a">
+            <li>Description: full custom bezier 3D path with unlimited control points and fixed moving speed.</li>
+            <li>Programming Languages: TypeScript, Js</li>
+            <li>Frameworks: cocos creator</li>
+            <li>Demo: private</li>
+            
+            <li><a href="https://youtu.be/xChbvAoBxmc" target="_blank">demo video</a></li>
+        </ul>
+        <h3>Personal projects</h3>
+        <p><strong>Similar faces</strong></p>
+        <ul class="a">
+            <li>Description: Detect how much the persons look like together in a photo.</li>
+            <li>Programming Languages: C++, Objective C, Python</li>
+            <li>Frameworks: OpenCV DNN for Faces Detector, Dlib for facial landmarks detector and face alignment, facenet model for extracting face embedding.</li>
+            <li><a href="https://apps.apple.com/us/app/similar-faces/id1523619974" target="_blank">Appstore</a></li>
+        </ul>
+
+        <p><strong>Z-Hunter</strong></p>
+        <ul class="a">
+            <li>Description: Puzzle Physic game.</li>
+            <li>Programming Languages: Js, C++, ObjectiveC</li>
+            <li>Frameworks: Cocos creator, Box2D</li>
+            <li><a href="https://apps.apple.com/us/app/z-hunter/id1600163401" target="_blank">Appstore</a></li>
+            <li><a href="https://www.youtube.com/watch?v=9LIh2ttALRQ" target="_blank">demo video</a></li>
+        </ul>
+
+        <p><strong>Sky Fire</strong></p>
+        <ul class="a">
+            <li>Description: Action fighting game.</li>
+            <li>Programming Languages: C++, ObjectiveC, Java</li>
+            <li>Frameworks: Cocos2d-x</li>
+            <li><a href="https://apps.apple.com/us/app/skyfire-vgame/id1482721783" target="_blank">Appstore</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.vgame.skyfire&hl=en&gl=US" target="_blank">Google Play</a></li>
+            <li><a href="https://www.youtube.com/shorts/zxOZIL2xFC8" target="_blank">demo video</a></li>
+        </ul>
+
+        <p><note>*For private projects please contact me personally for the live demos.</note></p>
+    </div>
+
+    <div class="cv-content" id="about">
+        <h2>About Me</h2>
+        <ul class="b">
+            <li>Very experience in kind of betting game and probability payout control.</li>
+            <li>Strong experience in multiplatform 2D/3D games.</li>
+            <li>Strong abilities in game optimization and algorithm.</li>
+            <li>Seriously in researching and approach new technologies.</li>
+            <li>I am funny, open and willing to help the others.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
