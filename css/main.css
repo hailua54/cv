@@ -25,6 +25,11 @@ ul.b {
     list-style-type: square;
 }
 
+li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 h2 {
     display: block;
     font-size: 25px;
