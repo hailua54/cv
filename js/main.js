@@ -5,7 +5,8 @@ var isMobile = /mobile|android|iphone|ipad/.test(ua);
 function onload()
 {
     let mainMenu = document.getElementById('main-menu');
-    if (isMobile) 
+    let noMenu = window.location.href.indexOf('noMenu') > 0;
+    if (isMobile || noMenu) 
     {
         mainMenu.style.display = 'none';
         return;
@@ -51,6 +52,13 @@ function updateSize()
 
 function onMenuItemSlected(selected)
 {
+    let id = selected.href.split('#')[1];
+    if (id == 'pdf')
+    {
+        
+        return;
+    }
+
     let mainMenu = document.getElementById('main-menu');
     var items = mainMenu.getElementsByTagName('a');
     for (let i = 0; i < items.length; i++) 
@@ -59,7 +67,6 @@ function onMenuItemSlected(selected)
         else items[i].classList.add('menu-active');
     }
 
-    let id = selected.href.split('#')[1];
     let contents = document.getElementsByClassName('cv-content');
     for (let i = 0; i < contents.length; i++) 
     {
